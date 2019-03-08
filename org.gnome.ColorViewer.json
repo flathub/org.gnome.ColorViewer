@@ -91,12 +91,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.3.tar.xz",
-          "sha256": "9a8e669ee1ea31632bee636cc57353f703c2ea9b64cd6e02bbaabe9a1e549df7"
-        },
-        {
-          "type": "patch",
-          "path": "no-daemon.patch"
+          "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.4.tar.xz",
+          "sha256": "9a0fe80160bf88efddb582a9fc0169f56065276dc3882c47dddb9eecd048c0a5"
         }
       ]
     },
