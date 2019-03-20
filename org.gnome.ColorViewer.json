@@ -2,7 +2,7 @@
   "app-id": "org.gnome.ColorViewer",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.30",
+  "runtime-version": "3.32",
   "command": "gcm-viewer",
   "branch": "stable",
   "finish-args": [
