@@ -119,6 +119,10 @@
           "type": "archive",
           "url": "https://people.freedesktop.org/~hughsient/temp/gnome-color-viewer-3.31.1.tar.xz",
           "sha256": "910f892f68917a028cf9aa2fb23ebdc68897006ffdd8fd329a18f55f9ead2d51"
+        },
+        {
+          "type": "patch",
+          "path": "appdata_oars_screenshots.patch"
         }
       ]
     }
