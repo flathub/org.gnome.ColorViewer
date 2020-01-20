@@ -2,20 +2,15 @@
   "app-id": "org.gnome.ColorViewer",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.30",
+  "runtime-version": "3.34",
   "command": "gcm-viewer",
-  "branch": "stable",
   "finish-args": [
     "--share=ipc",
-    "--filesystem=xdg-run/dconf",
     "--filesystem=~/.local/share/icc:ro",
-    "--filesystem=~/.config/dconf:ro",
-    "--talk-name=ca.desrt.dconf",
     "--talk-name=org.gtk.vfs",
     "--talk-name=org.gtk.vfs.*",
     "--socket=wayland",
-    "--socket=x11",
-    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+    "--socket=fallback-x11",
     "--system-talk-name=org.freedesktop.ColorManager"
   ],
   "cleanup": [
@@ -28,7 +23,8 @@
     "/share/man"
   ],
   "modules": [
-    "shared-modules/udev/udev-175.json",
+    "shared-modules/gudev/gudev.json",
+    "shared-modules/intltool/intltool-0.51.json",
     {
       "name": "libusb",
       "config-opts": [
@@ -98,14 +94,20 @@
     },
     {
       "name": "colord-gtk",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Ddocs=false",
+        "-Dman=false",
+        "-Dtests=false"
+      ],
       "cleanup": [
         "/bin"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/colord/releases/colord-gtk-0.1.26.tar.xz",
-          "sha256": "28d00b7f157ea3e2ea5315387b2660fde82faba16674861c50465e55d61a3e45"
+          "url": "https://www.freedesktop.org/software/colord/releases/colord-gtk-0.2.0.tar.xz",
+          "sha256": "2a4cfae08bc69f000f40374934cd26f4ae86d286ce7de89f1622abc59644c717"
         }
       ]
     },
@@ -117,6 +119,10 @@
           "type": "archive",
           "url": "https://people.freedesktop.org/~hughsient/temp/gnome-color-viewer-3.31.1.tar.xz",
           "sha256": "910f892f68917a028cf9aa2fb23ebdc68897006ffdd8fd329a18f55f9ead2d51"
+        },
+        {
+          "type": "patch",
+          "path": "appdata_oars_screenshots.patch"
         }
       ]
     }
