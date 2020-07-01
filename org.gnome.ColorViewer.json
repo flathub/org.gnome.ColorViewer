@@ -2,7 +2,7 @@
   "app-id": "org.gnome.ColorViewer",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.34",
+  "runtime-version": "3.36",
   "command": "gcm-viewer",
   "finish-args": [
     "--share=ipc",
@@ -40,8 +40,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.0.tar.xz",
-          "sha256": "d8e7950f99b6ae4c3e9b8c65f3692b9635289e6cff8de40c4af41b2e9b348edc"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.4.tar.xz",
+          "sha256": "581fd24e12496654b9b2a0732f810b554dfd9212516c18c23586c0cd0b382e04"
         }
       ]
     },
