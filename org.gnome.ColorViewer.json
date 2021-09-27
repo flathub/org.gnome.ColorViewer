@@ -2,7 +2,7 @@
   "app-id": "org.gnome.ColorViewer",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.36",
+  "runtime-version": "41",
   "command": "gcm-viewer",
   "finish-args": [
     "--share=ipc",
@@ -40,8 +40,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.4.tar.xz",
-          "sha256": "581fd24e12496654b9b2a0732f810b554dfd9212516c18c23586c0cd0b382e04"
+          "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.7.tar.xz",
+          "sha256": "da5f25d6873622689b3351486cbe028efc254403f646dd81225dfe8542d8c67d"
         }
       ]
     },
@@ -72,8 +72,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.4.tar.xz",
-          "sha256": "9a0fe80160bf88efddb582a9fc0169f56065276dc3882c47dddb9eecd048c0a5"
+          "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.5.tar.xz",
+          "sha256": "b774ea443d239f4a2ee1853bd678426e669ddeda413dcb71cea1638c4d6c5e17"
         }
       ]
     },
@@ -101,9 +101,9 @@
       "buildsystem": "meson",
       "sources": [
         {
-          "type": "archive",
-          "url": "https://people.freedesktop.org/~hughsient/temp/gnome-color-viewer-3.31.1.tar.xz",
-          "sha256": "910f892f68917a028cf9aa2fb23ebdc68897006ffdd8fd329a18f55f9ead2d51"
+          "type": "git",
+          "url": "https://gitlab.gnome.org/hughsie/gnome-color-viewer.git",
+          "commit": "0eebff488e648ceca82625405f7d1811fbc5aac1"
         },
         {
           "type": "patch",
