@@ -2,12 +2,11 @@
   "app-id": "org.gnome.ColorViewer",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "41",
+  "runtime-version": "42",
   "command": "gcm-viewer",
   "finish-args": [
     "--share=ipc",
     "--filesystem=~/.local/share/icc:ro",
-    "--talk-name=org.gtk.vfs",
     "--talk-name=org.gtk.vfs.*",
     "--socket=wayland",
     "--socket=fallback-x11",
