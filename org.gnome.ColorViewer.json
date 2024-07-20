@@ -106,7 +106,7 @@
         },
         {
           "type": "patch",
-          "path": "appdata_oars_screenshots.patch"
+          "path": "fix_appdata.patch"
         }
       ]
     }
