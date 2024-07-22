@@ -2,7 +2,7 @@
   "app-id": "org.gnome.ColorViewer",
   "sdk": "org.gnome.Sdk",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45",
+  "runtime-version": "46",
   "command": "gcm-viewer",
   "finish-args": [
     "--share=ipc",
@@ -102,11 +102,11 @@
         {
           "type": "git",
           "url": "https://gitlab.gnome.org/hughsie/gnome-color-viewer.git",
-          "commit": "0eebff488e648ceca82625405f7d1811fbc5aac1"
+          "commit": "24bbd4e652a264c1ca46b09d04b3afd3a15d60c2"
         },
         {
           "type": "patch",
-          "path": "appdata_oars_screenshots.patch"
+          "path": "fix_appdata.patch"
         }
       ]
     }
