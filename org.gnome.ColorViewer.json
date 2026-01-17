@@ -24,7 +24,6 @@
   "modules": [
     "shared-modules/gudev/gudev.json",
     "shared-modules/intltool/intltool-0.51.json",
-    "shared-modules/libusb/libusb.json",
     {
       "name": "gusb",
       "buildsystem": "meson",
