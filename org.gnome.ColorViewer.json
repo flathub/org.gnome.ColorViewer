@@ -22,7 +22,6 @@
     "/share/man"
   ],
   "modules": [
-    "shared-modules/gudev/gudev.json",
     "shared-modules/intltool/intltool-0.51.json",
     {
       "name": "gusb",
